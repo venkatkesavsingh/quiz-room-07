@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta name="google-site-verification" content="vC78cqbkJaStBhYMEA8VgEz8EvkUfO09FwlaZMnZQ20"/> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Nova</title> 
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body> 
+  <div id="app"> 
+    <!-- PASSCODE SCREEN --> 
+    <div class="screen active" id="passcode-box"> 
+      <img src="ASSETS/Welcome Msg.webp" class="welcome"> 
+      <div class="contain-bg"> 
+        <p class="passcode-head">Enter Team Passcode</p> 
+        <input type="text" maxlength="6" id="passcode-input" placeholder="••••••"/> 
+        <button id="passcode-btn">Enter</button> 
+        <p id="passcode-error"></p> 
+      </div> 
+    </div>
+        
+    <!-- WAITING SCREEN -->
+    <div class="screen" id="WaitingScreen"> 
+      <img src="ASSETS/Welcome Msg.webp" class="welcome"> 
+      <div class="contain-bg" id="card-container"> 
+        <div class="cardContent"> 
+          <h3 class="initializing">Waiting for the Game to Start</h3> 
+          <p class="warn"> please wait until the game Begins.<br><strong>Do not leave this page/refresh it.</strong></p> 
+        </div> 
+      </div> 
+    </div> 
+        
+    <!-- ROUND-1 (QUIZ SCREEN) -->
+    <div class="screen" id="quiz-UI"> 
+      <img src="ASSETS/Level-1.webp" class="Level-1-banner"> 
+      <div id="quiz-container"> 
+        <div class="quiz-header"> 
+          <div id="question-number">Question: 1</div> 
+          <div id="live-score">Score: 0</div> 
+        </div> 
+        <div id="timer">Time 30s</div> 
+        <div id="quiz-box"> 
+          <p id="question">Loading question...</p> 
+          <div class="options"> 
+            <button class="option">Option 1</button> 
+            <button class="option">Option 2</button> 
+            <button class="option">Option 3</button> 
+            <button class="option">Option 4</button> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+
+    <!-- ROUND-2 (WAITING SCREEN) -->
+    <div class="screen" id="WaitingScreen2"> 
+      <img src="ASSETS/Welcome Msg.webp" class="welcome"> 
+      <div class="contain-bg" id="card-container"> 
+        <div class="cardContent"> 
+          <h3 class="initializing2">Waiting for <strong>2nd Round</strong> to complete</h3> 
+          <p class="warn"> please wait until the Round-2 Ends.<br><strong>Do not leave this page/refresh it.</strong></p> 
+        </div> 
+      </div> 
+    </div>
+
+    <!-- QUALIFIED TEAMS (WAITING SCREEN) -->
+    <div class="screen" id="qualifiedWaitingScreen"> 
+      <img src="ASSETS/Welcome Msg.webp" class="welcome"> 
+      <div class="contain-bg" id="card-container"> 
+        <div class="cardContent"> 
+          <h3 class="initializing3"><strong>CONGRAGULATIONS! </strong>You are qualified to play Next level</h3> 
+          <p class="warn"> please show this message to your  mentor.<br><strong>Do not leave this page/refresh it.</strong></p> 
+        </div> 
+      </div> 
+    </div>
+
+    <!-- QUALIFIED TEAMS (WAITING SCREEN) -->
+    <div class="screen" id="gameOverScreen"> 
+      <img src="ASSETS/Welcome Msg.webp" class="welcome">
+      <div class="contain-bg" id="card-container"> 
+        <div class="cardContent"> 
+          <h3 class="initializing3"><strong>GAME OVER</strong></h3> 
+          <p class="warn">poniley uko uko<br><strong>Please leave this page.</strong></p> 
+        </div> 
+      </div> 
+    </div>
+  </div> 
+  <!-- audio + scripts unchanged --> 
+  <audio id="correct-sound" src="ASSETS/correct.mp3"></audio> 
+  <audio id="wrong-sound" src="ASSETS/wrong.mp3"></audio> 
+  <audio id="perfect-score-sound" src="ASSETS/victory.mp3"></audio> 
+  <audio id="defeat-score-sound" src="ASSETS/defeat.mp3"></audio> 
+  <audio id="applause-score-sound" src="ASSETS/applause.mp3"></audio> 
+  <script type="module" src="script.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body> 
+</html>

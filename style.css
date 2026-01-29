@@ -1,0 +1,319 @@
+/* =======================
+   GLOBAL RESET
+======================= */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  background: url("ASSETS/Background.webp") no-repeat center center;
+  background-size: cover;
+  background-position: center;
+}
+
+/* =======================
+   SCREEN HANDLING
+======================= */
+.screen {
+  display: none;
+  overflow: hidden;
+}
+
+.screen.active {
+  display: block;
+}
+
+/* =======================
+   WELCOME
+======================= */
+.welcome {
+  margin-top: 10vh;
+  width: min(85%, 500px);
+}
+
+/* =======================
+   CONTAINER BACKGROUND
+======================= */
+.contain-bg {
+  width: min(100%, 320px);
+  aspect-ratio: 2.5 / 3.7;
+  margin: 2vh auto;
+  padding: 6%;
+
+  border-radius: 12px;
+  background: url("ASSETS/All-in-One.webp") no-repeat center;
+  background-size: cover;
+
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  border: 0.5px solid black;
+}
+
+/* =======================
+   PASSCODE SCREEN
+======================= */
+.passcode-head {
+  margin-top: 30%;
+  font-size: clamp(1.3rem, 2.5vw, 1.4rem);
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#passcode-input {
+  width: 100%;
+  max-width: 260px;
+  height: 45px;
+
+  margin: 8% auto;
+  display: block;
+
+  font-size: 1rem;
+  letter-spacing: 1.1em;
+  padding-left: 1.1em;
+  text-align: center;
+
+  border-radius: 4px;
+  border: 2px solid #333;
+  outline: none;
+}
+
+#passcode-input.filled {
+  caret-color: transparent;
+}
+
+#passcode-btn {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 5%;
+
+  border-radius: 4px;
+  border: 1px solid #ccc;
+
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+#passcode-btn:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+#passcode-error {
+  margin-top: 6%;
+  font-size: clamp(1.2rem, 2.5vw, 1.1rem);
+  font-weight: bold;
+  color: red;
+}
+
+/* =======================
+   WAITING SCREEN
+======================= */
+#WaitingScreen {
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+#WaitingScreen2 {
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+.cardContent {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(85%, 420px);
+  z-index: 2;
+  font-size: 1rem;
+}
+
+.initializing {
+  margin: 10% 0 1%;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.initializing2 {
+  margin: 10% 0 1%;
+  font-size: 1em;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.initializing::after {
+  content: ".";
+  animation: dots 2.5s steps(4, end) infinite;
+}
+
+.initializing2::after {
+  content: ".";
+  animation: dots 2.5s steps(4, end) infinite;
+}
+
+@keyframes dots {
+  0% { content: "."; }
+  33% { content: ".."; }
+  66% { content: "..."; }
+  100% { content: ""; }
+}
+
+.warn {
+  margin-top: 25%;
+  font-size: clamp(0.75rem, 2vw, 0.75rem);
+}
+
+/* =======================
+   QUIZ CONTAINER
+======================= */
+.Level-1-banner {
+  margin-top: 5vh;
+  width: min(55%, 500px);
+}
+
+#quiz-container {
+  width: min(85%, 600px);
+  aspect-ratio: 2.5 / 3.6;
+
+  margin: 3vh auto;
+  padding: clamp(1rem, 12vh, 4rem)
+  clamp(1rem, 3vh, 3rem)
+  clamp(1rem, 10vh, 4rem)
+  clamp(1rem, 3vh, 3rem);
+
+  border-radius: 12px;
+  background: url("ASSETS/All-in-One.webp") no-repeat center;
+  background-size: cover;
+
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+  border: 0.5px solid black;
+}
+
+/* =======================
+   QUIZ HEADER
+======================= */
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#question-number,
+#live-score,
+#timer {
+  font-weight: bold;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+/* =======================
+   QUIZ BOX
+======================= */
+#quiz-box {
+  margin-top: 1vh;
+  padding: 0.6rem 1rem;
+
+  background: rgba(200, 200, 200, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#question {
+  height: 8vh;
+  margin: 0;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: clamp(1rem, 3vw, 1.3rem);
+}
+
+/* =======================
+   OPTIONS
+======================= */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+}
+
+.option {
+  flex: 1 1 45%;
+  min-width: 120px;
+
+  padding: 0;
+  font-size: clamp(0.85rem, 2.2vw, 1rem);
+  font-weight: bold;
+
+  border-radius: 8px;
+  border: none;
+
+  background-color: #e0d4f7;
+  color: #333;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#feedback {
+  margin-top: 2vh;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  font-weight: bold;
+}
+
+/* =======================
+   MOBILE
+======================= */
+@media (max-width: 480px) {
+  .passcode-head {
+    margin-top: 35%;
+  }
+
+   #quiz-container {
+     padding: clamp(1rem, 16vh, 5rem)
+     clamp(1rem, 3vh, 3rem)
+     clamp(1rem, 10vh, 4rem)
+     clamp(1rem, 3vh, 3rem);
+   }
+   
+  .option {
+    height: 5vh;
+    flex: 1 1 100%;
+  }
+}
+
+/* =======================
+   TABLET
+======================= */
+@media (max-width: 768px) {
+  .contain-bg {
+    width: 75%;
+  }
+
+  .cardContent {
+    width: 70%;
+  }
+}
+
+/* =======================
+   DESKTOP
+======================= */
+@media (min-width: 1024px) {
+  #quiz-container {
+    padding: 4rem;
+  }
+}
