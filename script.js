@@ -9,13 +9,13 @@ import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/1
  * FIREBASE CONFIG
  ********************************/
 const firebaseConfig = {
-  apiKey: "AIzaSyCFE2GuML1GCaWPoGHmoiFfKX_WW55kktY",
-  authDomain: "quiz-room-08.firebaseapp.com",
-  databaseURL: "https://quiz-room-08-default-rtdb.firebaseio.com",
-  projectId: "quiz-room-08",
-  storageBucket: "quiz-room-08.firebasestorage.app",
-  messagingSenderId: "62287969743",
-  appId: "1:62287969743:web:47bf77b38dde3fb7b626ba"
+  apiKey: "AIzaSyDsz4MqmguRW-_dtZDxniLgGawBe9QBt0o",
+  authDomain: "quiz-room-7.firebaseapp.com",
+  databaseURL: "https://quiz-room-7-default-rtdb.firebaseio.com",
+  projectId: "quiz-room-7",
+  storageBucket: "quiz-room-7.firebasestorage.app",
+  messagingSenderId: "46213262853",
+  appId: "1:46213262853:web:f96b5a7f19b03c19e2366c"
 };
 
 const app = initializeApp(firebaseConfig);
