@@ -1,83 +1,82 @@
 [
   {
-    "question": "What is the capital of Canada?",
-    "options": ["Toronto", "Ottawa", "Vancouver", "Montreal"],
-    "answer": "Ottawa"
+    "question": "Which planet is known for its beautiful rings?",
+    "options": ["Neptune", "Uranus", "Saturn", "Jupiter"],
+    "answer": "Saturn"
   },
   {
-    "question": "How many players are there in a football team?",
-    "options": ["9", "10", "11", "12"],
-    "answer": "11"
+    "question": "Which Article of the Indian Constitution deals with emergency provisions?",
+    "options": ["Article 32", "Article 356", "Article 370", "Article 21"],
+    "answer": "Article 356"
   },
   {
-    "question": "Which Indian state is called the land of five rivers?",
-    "options": ["Haryana", "Punjab", "Uttar Pradesh", "Rajasthan"],
-    "answer": "Punjab"
+    "question": "Which country has won the most Olympic gold medals overall?",
+    "options": ["USA", "China", "Russia", "Germany"],
+    "answer": "USA"
   },
   {
-    "question": "What is the currency of Japan?",
-    "options": ["Won", "Dollar", "Yen", "Peso"],
-    "answer": "Yen"
+    "question": "Which River passes through the most countries?",
+    "options": ["Yangtze", "Nile", "Danube", "Amazon"],
+    "answer": "Danube"
   },
   {
-    "question": "Which state is known as the spice garden of India?",
-    "options": ["Kerala", "Tamil Nadu", "Assam", "Karnataka"],
+    "question": "The PH Value of pure water is?",
+    "options": ["6", "7", "8", "9"],
+    "answer": "7"
+  },
+  {
+    "question": "Ramappa Temple, a UNESCO World heritage site, is located in which District?",
+    "options": ["Hanumakonda", "Mulugu", "Nalgonda", "Adilabad"],
+    "answer": "Mulugu"
+  },
+  {
+    "question": "Amaravati is situated on the banks of which river?",
+    "options": ["Godavari", "Krishna", "Penna", "Tungabhadra"],
+    "answer": "Tungabhadra"
+  },
+  {
+    "question": "The Sriharikota space center (Satish Dhawan Space Centre, is located in which district)?",
+    "options": ["Kurnool", "Nellore (Tirupati Region)", "Visakhapatnam", "Guntur"],
+    "answer": "Visakhapatnam"
+  },
+  {
+    "question": "Which Instrument is used to measure earthquakes?",
+    "options": ["Anemometer", "thermometer", "Seismograph", "Barometer"],
+    "answer": "Seismograph"
+  },
+  {
+    "question": "Which Article of the Constitution deals with the formation of new states?",
+    "options": ["Article 1", "Article 2", "Article 3", "Article 5"],
+    "answer": "Article 3"
+  },
+  {
+    "question": "Kathakali dance form belongs to which state?",
+    "options": ["Odisha", "Kerala", "Tamil Nadu", "Karnataka"],
     "answer": "Kerala"
   },
   {
-    "question": "Which is the highest civil award in India?",
-    "options": ["Padma Shri", "Padma Bhushan", "Padma Vibhushan", "Bharat Ratna"],
-    "answer": "Bharat Ratna"
+    "question": "Which state has the longest coast-line in India?",
+    "options": ["Tamil Nadu", "Andhra Pradesh", "Gujarat", "Maharashtra"],
+    "answer": "Gujarat"
   },
   {
-    "question": "Which fort in Telangana is known for its acoustic architecture (clap echo system)?",
-    "options": ["Warangal Fort", "Bhongir Fort", "Golconda Fort", "Elgandal Fort"],
-    "answer": "Golconda Fort"
+    "question": "Who was the first Indian to win a Nobel Prize?",
+    "options": ["C.V. Raman", "Rabindranath Tagore", "Mother Teresa", "Amartya Sen"],
+    "answer": "Rabindranath Tagore"
   },
   {
-    "question": "Which Telangana district is known as the “Rice Bowl of Telangana”?",
-    "options": ["Karimnagar", "Nizamabad", "Suryapet", "Jagtial"],
-    "answer": "Nizamabad"
+    "question": "NASA Stands for?",
+    "options": ["National Aeronautics and Space Administration", "National Aerospace Science Administration", "National Astronut Space Association", "North America Space Agency"],
+    "answer": "National Aeronautics and Space Administration"
   },
   {
-    "question": "Which country invented chess?",
-    "options": ["china", "persia", "India", "egypt"],
-    "answer": "India"
+    "question": "Who Invented the Telephone?",
+    "options": ["James Watt", "Nikola Tesla", "Alexander Graham Bell", "Tomas Edison"],
+    "answer": "Alexander Graham Bell"
   },
   {
-    "question": "Im tall when Im young & im short when I am old who am i?",
-    "options": ["Candle", "Pen", "Tree", "Ice-cream"],
-    "answer": "Candle"
-  },
-
-  {
-    "question": "Which is the smallest planet in our solar system?",
-    "options": ["Mercury", "Mars", "Venus", "Pluto"],
-    "answer": "Mercury"
-  },
-  {
-    "question": "Which country has won the most cricket world cups?",
-    "options": ["India", "England", "Australia", "West indies"],
-    "answer": "Australia"
-  },
-  {
-    "question": "The Polavaram Project is built on which river??",
-    "options": ["Krishna", "Godavari", "Penna", "Kaveri"],
-    "answer": "Godavari"
-  },
-  {
-    "question": "Who coined the slogan 'JAI HIND'?",
-    "options": ["Subhash Chandra Bose", "Mahatma Gandhi", "Jawaharlal Nehru ", "Lal Bahadur Shastri"],
-    "answer": "Subhash Chandra Bose"
-  },
-  {
-    "question": "Who paited the famous art work 'MONALISA'?",
-    "options": ["Andy Warhol", "Frida Kahlo", "Pablo Picasso", "Leonardo da Vinci"],
-    "answer": "Leonardo da Vinci"
-  },
-  {
-    "question": "Which instrument is used to measure earthquakes?",
-    "options": [" Barometer ", "Seismograph", "Thermometer", "Anemometer"],
-    "answer": "Seismograph"
+    "question": "The Currency of South-Korea is?",
+    "options": ["Yen", "Yuan", "Won", "ringgit"],
+    "answer": "Won"
   }
 ]
